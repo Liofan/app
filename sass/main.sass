@@ -264,7 +264,6 @@ main
 	ul
 		list-style: none
 		li
-			width: 200px
 			position: relative
 			color: #bdbdbd
 			font-family: Roboto
@@ -274,6 +273,9 @@ main
 			letter-spacing: 0.9px
 			z-index: 1
 			span
+					position: relative
+					top: 20px
+					left: -20px
 					opacity: 0.05
 					color: #ffffff
 					font-family: "Roboto"
@@ -281,11 +283,11 @@ main
 					font-weight: 700
 					line-height: 52px
 					text-transform: uppercase
-					letter-spacing: -20px
+					letter-spacing: -40px
 			&:nth-child(1)
+				width: 200px
 				top: -265px
 			&:nth-child(2)
-				width: 214px
 				top: -430px
 				left: 305px
 			&:nth-child(3)
@@ -294,11 +296,16 @@ main
 				left: 515px
 			&:nth-child(4)
 				width: 154px
-				top: -640px
+				top: -615px
 				left: 760px
+				span
+					left: -25px
 			&:nth-child(5)
-				top: -745px
+				top: -725px
 				left: 970px
+				span
+					top: 10px
+					left: -25px
 
 		
 
