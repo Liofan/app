@@ -1,0 +1,322 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 0.94vmax
+	min-width: 16.8vw
+	position: relative
+	line-height: 1.65
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+
+
+
+
+main
+	background-color: #0b1119
+	position: relative
+	height: auto
+
+.logo
+	margin-top: 3.31vw
+	display: flex
+	justify-content: flex-start
+
+.section__one 
+	left: 0
+	width: 50%
+	padding-left: 0
+	
+
+	h1
+		width: 29.2vw
+		color: #ffffff
+		font-family: Roboto
+		font-size: 2.10vmax
+		font-weight: 400
+		line-height: 2.73vw
+		text-transform: uppercase
+		margin-bottom: 1.52vw	
+		span
+			width: 0.63vw
+			height: 0.47vw
+			color: #ffffff
+			font-family: Roboto
+			font-size: 1.89vmax
+			font-weight: 700
+			line-height: 2.52vw
+			text-transform: uppercase
+	p
+		width: 18.7vw
+		color: #bdbdbd
+		font-family: Roboto
+		font-size: 0.94vw
+		font-weight: 300
+		line-height: 1.26vw
+.title
+	margin-top: 5.36vw
+	margin-bottom: 0.84vw
+	text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59)
+	color: #f99406
+	font-family: Roboto
+	font-size: 0.73vmax
+	font-weight: 300
+	line-height: 1.36vw
+	text-transform: uppercase
+		
+.section__form
+	input
+		width: 373px
+		height: 54px
+		background-color: #ffffff
+		color: #afafaf
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 300
+		padding-left: 27px
+	button
+		width: 190px
+		height: 54px	
+		background-color: #f99406
+		color: #ffffff
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 300
+		border: none
+		margin-left: -5px
+		&:hover
+			background-color: #f7a83a
+
+		
+
+
+.section__image
+	position: absolute
+	right: 0
+	top: 0
+	padding: 4vw 0 10vw 0
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 50%
+	background-image: url(../img/screen__bg.png)
+	background-position: center
+	background-size: cover
+	background-repeat: no-repeat
+
+
+.cards
+	margin-top: 12.68vw
+	z-index: 1
+.card
+	width: 190px
+	margin: 0 70px
+.card__img
+	max-height: 3.73vw
+
+.card__h2
+	position: relative
+	padding-top: 1.57vw
+	color: #fff
+	font-family: Roboto
+	font-size: 0.94vw
+	font-weight: 400
+	line-height: 1.26vw
+	text-transform: uppercase
+	&::after
+		content: ''
+  	position: relative
+  	right: -14px
+  	width: 79px
+		height: 2px
+		background-color: #242930
+
+
+
+			
+.card__p
+	color: #bdbdbd
+	font-size: 0.94vw
+	font-weight: 300
+	line-height: 1.26vw
+	margin: 0
+
+
+
+	// about
+
+.about 
+	margin-top: 130px
+	display: flex
+	flex-direction: column
+	justify-content: center
+	width: 734px
+	height: 600px
+	&__info
+		display: flex
+		padding-left: 268px
+		flex-direction: column
+		border: 3px solid #f59f26
+		position: relative
+
+	&__img
+		display: flex
+		position: absolute
+		top: 68px
+		left: -180px
+
+
+	&__name
+		width: 350px
+		color: #ffffff
+		font-family: Roboto
+		font-size: 40px
+		font-weight: 400
+		line-height: 52px
+		text-transform: uppercase
+		letter-spacing: 2px
+	&__desc
+		width: 240px
+		color: #bdbdbd
+		font-family: Roboto
+		font-size: 14px
+		font-weight: 300
+		line-height: 18px
+		letter-spacing: 1.4px
+	&__text
+		width: 390px
+		margin-top: 55px
+		color: #bdbdbd
+		font-family: Roboto
+		font-size: 18px
+		font-weight: 300
+		line-height: 24px
+		letter-spacing: 0.9px
+		padding-bottom: 230px
+
+
+
+
+
+
+// finish
+#graf
+	box-sizing: border-box
+.finish__graf
+	height: 100%
+	background-image: url(../img/lines.png)
+	background-position: center center
+	background-repeat: no-repeat
+	img
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		top: 190px
+		margin-left: 192px
+	
+	ul
+		list-style: none
+		li
+			width: 200px
+			position: relative
+			color: #bdbdbd
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 300
+			line-height: 24px
+			letter-spacing: 0.9px
+			&:nth-child(1)
+				top: -65px
+				span
+					opacity: 0.05
+					color: #ffffff
+					font-family: "Roboto - Black"
+					font-size: 72px
+					font-weight: 400
+					text-transform: uppercase
+			&:nth-child(2)
+				width: 214px
+				top: -195px
+				left: 305px
+			&:nth-child(3)
+				width: 142px
+				top: -145px
+				left: 515px
+			&:nth-child(4)
+				width: 154px
+				top: -320px
+				left: 780px
+			&:nth-child(5)
+				width: 154px
+				top: -400px
+				left: 1000px
+		
+
+
+.finish
+	.title
+		color: #ffffff
+		font-family: Roboto
+		font-size: 40px
+		font-weight: 400
+		line-height: 52px
+		text-transform: uppercase
+	&__graf
+		li
+			color: #bdbdbd
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 300
+			line-height: 24px
+
+@import "media" // Всегда в конце
