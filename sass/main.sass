@@ -160,25 +160,33 @@ main
 .card
 	width: 190px
 	margin: 0 70px
-.card__img
-	max-height: 3.73vw
-
-.card__h2
-	position: relative
-	padding-top: 1.57vw
-	color: #fff
-	font-family: Roboto
-	font-size: 0.94vw
-	font-weight: 400
-	line-height: 1.26vw
-	text-transform: uppercase
-	&::after
-		content: ''
-  	position: relative
-  	right: -14px
-  	width: 79px
-		height: 2px
-		background-color: #242930
+	&__img
+		max-height: 3.73vw
+	&__h2
+		position: relative
+		padding-top: 1.57vw
+		color: #fff
+		font-family: Roboto
+		font-size: 0.94vw
+		font-weight: 400
+		line-height: 1.26vw
+		text-transform: uppercase
+		&:after
+			content: ''
+			width: 79px
+			height: 2px
+			background-color: #242930
+			position: absolute
+			bottom: -20px
+			left: -110px
+		&::before
+			content: ''
+			width: 79px
+			height: 2px
+			background-color: #242930
+			position: absolute
+			bottom: -10px
+			left: 170px
 
 
 
@@ -224,6 +232,18 @@ main
 		line-height: 52px
 		text-transform: uppercase
 		letter-spacing: 2px
+		position: relative
+		margin-bottom: 37px
+		&:after
+			content: ''
+			position: absolute
+			top: 65px
+			left: -200px
+			// Style for "line"
+			width: 401px
+			height: 2px
+			background-color: #ffffff
+			opacity: 0.1
 	&__desc
 		width: 240px
 		color: #bdbdbd
@@ -350,6 +370,16 @@ main
 		font-weight: 300
 		line-height: 24px
 		text-transform: uppercase
+		position: relative
+		&:after
+			content: ''
+			// Style for "line"
+			width: 201px
+			height: 2px
+			background-color: #242930
+			position: absolute
+			bottom: -20px
+			left: 130px
 	&__title
 		color: #ffffff
 		font-family: Roboto
