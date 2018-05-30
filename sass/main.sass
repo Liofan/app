@@ -263,8 +263,9 @@ main
 	
 	ul
 		list-style: none
+		position: relative
 		li
-			position: relative
+			position: absolute
 			color: #bdbdbd
 			font-family: Roboto
 			font-size: 18px
@@ -288,21 +289,21 @@ main
 				width: 200px
 				top: -265px
 			&:nth-child(2)
-				top: -430px
-				left: 305px
+				top: -350px
+				left: 335px
 			&:nth-child(3)
 				width: 170px
-				top: -415px
-				left: 515px
+				top: -255px
+				left: 545px
 			&:nth-child(4)
 				width: 154px
-				top: -615px
+				top: -355px
 				left: 760px
 				span
 					left: -25px
 			&:nth-child(5)
-				top: -725px
-				left: 970px
+				top: -390px
+				left: 1000px
 				span
 					top: 10px
 					left: -25px
@@ -336,9 +337,10 @@ main
 	align-items: center
 	justify-content: center
 	width: 896px
-	height: 782px
+	height: 790px
 	background-image: url(../img/screen__bg.png)
 	background-repeat: no-repeat
+	margin-bottom: 240px
 	.title
 		margin-top: 0
 		text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59)
@@ -367,13 +369,14 @@ main
 
 .time__timer
 	form
-		margin-top: 47px
+		margin-top: 147px
 
 .countdown
 	list-style: none
 	margin: 6px 0 100px 0
 	padding: 0
 	display: flex
+	position: absolute
 	li
 		display: inline-flex
 		/* здесь дни, часы, минуты, секунды */
@@ -397,7 +400,7 @@ main
 				left: 0
 		div
 			position: absolute
-			bottom: 280px
+			top: 80px
 			margin-left: 10px
 			align-items: center
 			// Style for "секунд"
