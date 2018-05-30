@@ -371,7 +371,7 @@ main
 
 .countdown
 	list-style: none
-	margin: 6px 0 0 0 
+	margin: 6px 0 100px 0 
 	padding: 0
 	display: flex
 	li
@@ -385,12 +385,17 @@ main
 			line-height: 52px
 			text-transform: uppercase
 			letter-spacing: 3px
+			position: relative
 			&:after
 				content: ''
 				// Style for "line activ"
-				border: 2px solid #ffffff
-				width: 120px
+				position: absolute
+				background: #ffffff
+				width: 100%
 				height: 2px
+				bottom: -15px
+				left: 0
+
 		div
 			position: absolute
 			bottom: 280px
