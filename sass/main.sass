@@ -269,6 +269,34 @@ main
 
 
 // finish
+
+.finish
+	margin: 186px 0 86px 0
+	.title
+		color: #ffffff
+		font-family: Roboto
+		font-size: 40px
+		font-weight: 400
+		line-height: 52px
+		text-transform: uppercase
+		position: relative
+		&::before
+			position: absolute
+			top: -40px
+			left: -60px
+			content: ''
+			background-image: url(../img/lines-decor.png)
+			// Style for "lines deco"
+			width: 90px
+			height: 17px
+	&__graf
+		li
+			color: #bdbdbd
+			font-family: Roboto
+			font-size: 18px
+			font-weight: 300
+			line-height: 24px
+
 #graf
 	box-sizing: border-box
 .finish__graf
@@ -305,47 +333,50 @@ main
 					line-height: 52px
 					text-transform: uppercase
 					letter-spacing: -40px
+			img
+				position: absolute
 			&:nth-child(1)
-				width: 200px
+				width: 220px
 				top: -265px
+				img
+					top: 155px
+					left: -200px
 			&:nth-child(2)
 				top: -350px
 				left: 335px
+				img
+					top: 160px
+					left: -209px
 			&:nth-child(3)
 				width: 170px
 				top: -255px
 				left: 545px
+				img
+					top: 153px
+					left: -212px
 			&:nth-child(4)
 				width: 154px
 				top: -355px
 				left: 760px
 				span
 					left: -25px
+				img
+					top: 216px
+					left: -212px
 			&:nth-child(5)
 				top: -390px
 				left: 1000px
 				span
 					top: 10px
 					left: -25px
+				img
+					top: 111px
+					left: -212px
 
 		
 
 
-.finish
-	.title
-		color: #ffffff
-		font-family: Roboto
-		font-size: 40px
-		font-weight: 400
-		line-height: 52px
-		text-transform: uppercase
-	&__graf
-		li
-			color: #bdbdbd
-			font-family: Roboto
-			font-size: 18px
-			font-weight: 300
-			line-height: 24px
+
 
 
 
@@ -356,13 +387,13 @@ main
 	flex-flow: column wrap
 	align-items: center
 	justify-content: center
-	width: 896px
-	height: 790px
-	background-image: url(../img/screen__bg.png)
+	width: 900px
+	height: 785px	
+	background-image: url(../img/bg__time.png)
 	background-repeat: no-repeat
-	margin-bottom: 240px
+	margin-bottom: 140px
 	.title
-		margin-top: 0
+		margin: 0 0 39px 0
 		text-shadow: 0 3px 27px rgba(249, 148, 6, 0.59)
 		color: #f99406
 		font-family: Roboto
@@ -378,7 +409,7 @@ main
 			height: 2px
 			background-color: #242930
 			position: absolute
-			bottom: -20px
+			bottom: -40px
 			left: 130px
 	&__title
 		color: #ffffff
@@ -393,6 +424,7 @@ main
 		font-size: 18px
 		font-weight: 300
 		line-height: 24px
+		margin: 40px 0 60px 0
 
 
 
